@@ -1,4 +1,4 @@
-Emre Sunar: GlitchLink
+Emre Sunar: https://a1-emrxv.glitch.me
 
 This project shows the development of a personal portfolio website that highlights my academic background, technical skills, and my passion for the game of chess. It combines semantic HTML, CSS styling, and JavaScript to create a visually appealing representation of my interests and achievements. The website features sections showcasing my courses, technologies I've worked with and my proficiency with them, and a dedicated page for my chess hobby, including fun facts and interactive elements. With the vibrant color palette and interesting information, this project effectively communicates both my academic and personal interests in a polished and engaging way.
 
