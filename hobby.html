@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby: Chess</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const funFact = document.querySelector("aside");
+            let direction = 1;
+            let position = 0;
+
+            function animateFunFact() {
+                position += direction;
+                funFact.style.transform = `translateY(${position}px)`;
+
+                if (position > 10 || position < -10) {
+                    direction *= -1; // Reverse direction
+                }
+                requestAnimationFrame(animateFunFact);
+            }
+            animateFunFact();
+        });
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Welcome to My Chess Hobby Page</h1>
+        <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobby.html">My Hobby</a></li>
+            <li><a href="https://www.wpi.edu" target="_blank">WPI Home</a></li>
+            <li><a href="https://www.chess.com/" target="_blank">Learn Chess</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class = "content-container1">
+    <section class="content-section green">
+        <h2>Why I Love Chess</h2>
+        <p>Chess is a game of strategy and discipline. It challenges you to think ahead and adapt to different situations. I enjoy playing chess casually with friends and more competitively online.</p>
+    </section>
+    <article>
+        <h2>About Chess</h2>
+        <p>Chess is a two-player board game played on an 8x8 grid. Each player controls an army of 16 pieces, including a king, queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns. In a nutshell, the goal is to checkmate the opponents king while protecting your own. </p>
+    </article>
+    <aside style="background: linear-gradient(135deg, #f39c12 30%, #ffffff 70%); color: #2c3e50; font-style: italic;">
+        <h3>Fun Fact</h3>
+        <p>Did you know? The number of possible chess games exceeds the number of atoms in the observable universe!</p>
+    </aside>
+    <section class="content-section">
+        <h2>I Would Love to Hear About Your Chess Interests!</h2>
+        <form>
+            <!-- Text Box -->
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <!-- Text Area -->
+            <label for="comments">What do you like about chess?</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br><br>
+
+            <!-- Checkboxes -->
+            <label>What aspects of chess do you enjoy? (Select all that apply):</label><br>
+            <input type="checkbox" id="strategy" name="aspect" value="Strategy">
+            <label for="strategy">Strategy</label><br>
+            <input type="checkbox" id="competition" name="aspect" value="Competition">
+            <label for="competition">Competition</label><br>
+            <input type="checkbox" id="creativity" name="aspect" value="Creativity">
+            <label for="creativity">Creativity</label><br><br>
+
+            <!-- Radio Buttons -->
+            <label>How often do you play chess?</label><br>
+            <input type="radio" id="daily" name="frequency" value="Daily">
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="weekly" name="frequency" value="Weekly">
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="occasionally" name="frequency" value="Occasionally">
+            <label for="occasionally">Occasionally</label><br><br>
+
+            <!-- Drop Down Selection List -->
+            <label for="level">What is your skill level?</label><br>
+            <select id="level" name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Chess Hobby Page</p>
+</footer>
+</body>
+</html>

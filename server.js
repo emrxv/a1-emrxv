@@ -10,6 +10,15 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' );
       break;
+    case '/hobby.html':
+      sendFile(response, 'hobby.html');
+      break;
+    case '/styles.css':
+      sendFile(response, 'styles.css');
+      break;
+    case '/chesspieces.webp':
+      sendFile(response, 'chesspieces.webp');
+      break;
     default:
       response.end( '404 Error: File Not Found' );
   }
